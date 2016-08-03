@@ -25,11 +25,11 @@ namespace AzureUtils.Controllers
             {
                 //TODO: json is the payload
                 String json = JsonConvert.SerializeObject(returnedUser);
-                var response = this.Request.CreateResponse(HttpStatusCode.OK);
-                response.Content = new StringContent(json, Encoding.UTF8, "application/json");
-                return response;
+            var response = this.Request.CreateResponse(HttpStatusCode.OK);
+            response.Content = new StringContent(json, Encoding.UTF8, "application/json");
+            return response;
             }
-            
+
         }
     }
 }
